@@ -1,0 +1,340 @@
+/*General Styles*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: "Raleway", sans-serif;
+	color: #555;
+}
+
+ul,
+nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	opacity: 0.75;
+	color: #fff;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+a.btn {
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	background-color: #e07e7b;
+	opacity: 1;
+  transition: all 400ms;
+  margin: 30px;
+}
+
+a.btn:hover {
+	background-color: #ce5856;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 80px;
+}
+
+section:not(.hero):nth-child(even) {
+	background-color: #f5f5f5;
+}
+
+.grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+hr {
+	width: 250px;
+	height: 3px;
+	background-color: #e07e7b;
+	border: 0;
+	margin-bottom: 50px;
+}
+
+.image-1 {
+	background-image: url("https://static.vecteezy.com/system/resources/previews/009/795/492/original/information-technology-icon-illustration-vector.jpg");
+}
+
+.image-2 {
+	background-image: url("https://thumbs.dreamstime.com/b/computer-science-engineering-education-doodle-art-color-colour-full-fun-style-vector-illustration-133081878.jpg");
+}
+
+.image-3 {
+	background-image: url("https://media.istockphoto.com/id/1298340769/vector/robotics-engineering-related-modern-line-style-vector-illustration.jpg?s=612x612&w=0&k=20&c=7WA3m285HZVVL6qw31ExZCj9NIPZP23tPO-G4TluQx8=");
+}
+
+.image-4 {
+	background-image: url("https://image.spreadshirtmedia.com/image-server/v1/products/T1459A839PA3861PT28D1029886499W10000H10000/views/1,width=550,height=550,appearanceId=839,backgroundColor=F2F2F2/electrical-engineering-sticker.jpg");
+}
+.image-5 {
+	background-image: url("https://us.123rf.com/450wm/b44022101/b440221011701/b44022101170100059/69991346-construction-civil-engineering-land-survey-engineer-vector-illustration.jpg?ver=6");
+}
+.image-6 {
+	background-image: url("https://chettinadtech.ac.in/assets/images/dept/AIDSLOGOCOVER.jpg");
+}
+.image-7 {
+	background-image: url("https://media.licdn.com/dms/image/C4E12AQGwkiCdp2TSQQ/article-cover_image-shrink_600_2000/0/1520094754338?e=2147483647&v=beta&t=OWIfyWFNFcOJVfhwhqlYAoVKi9-m1Pf8xvIhli6r_Q8");
+}
+.image-8 {
+	background-image: url("https://thumbs.dreamstime.com/b/mechatronics-word-cloud-collage-concept-background-mechatronics-word-cloud-collage-concept-background-215580483.jpg");
+}
+
+section h3.title {
+	text-transform: capitalize;
+	font: bold 48px "Amatic SC", sans-serif;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+section p {
+	max-width: 775px;
+	line-height: 2;
+	padding: 0 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+	section {
+		padding: 50px 20px;
+	}
+}
+
+/*Header Styles*/
+
+header {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px 0;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+	color: #fff;
+	z-index: 2;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+header h2 {
+	font-family: "Amatic SC", sans-serif;
+}
+
+header nav {
+	display: flex;
+	margin-right: -15px;
+}
+
+header nav li {
+	margin: 0 15px;
+}
+
+@media (max-width: 800px) {
+	header {
+		padding: 20px 50px;
+		flex-direction: column;
+	}
+
+	header h2 {
+		margin-bottom: 15px;
+	}
+}
+
+/*Hero Styles*/
+
+.hero {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	color: #fff;
+}
+
+.hero .background-image {
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://images.pexels.com/photos/296121/pexels-photo-296121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+}
+
+.hero h1 {
+	font: 72px "Amatic SC", sans-serif;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	margin-bottom: 15px;
+}
+
+.hero h3 {
+	font: 28px "Raleway", sans-serif;
+	font-weight: 300;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	margin-bottom: 40px;
+}
+
+.hero a.btn {
+	padding: 20px 46px;
+
+}
+
+.hero-content-area {
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.hero {
+		min-height: 600px;
+	}
+
+	.hero h1 {
+		font-size: 48px;
+	}
+
+	.hero h3 {
+		font-size: 24px;
+	}
+
+	.hero a.btn {
+		padding: 15px 40px;
+	}
+}
+
+/*Destinations Section*/
+
+.destinations .grid li {
+	height: 350px;
+	padding: 20px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.destinations .grid li.small {
+	flex-basis: 30%;
+}
+
+.destinations .grid li.large {
+	flex-basis: 70%;
+}
+
+@media (max-width: 1100px) {
+	.destinations .grid li.small,
+	.destinations .grid li.large {
+		flex-basis: 50%;
+	}
+}
+
+@media (max-width: 800px) {
+	.destinations .grid li.small,
+	.destinations .grid li.large {
+		flex-basis: 100%;
+	}
+}
+
+/*Packages Section*/
+
+.packages .grid li {
+	padding: 50px;
+	flex-basis: 50%;
+	text-align: center;
+}
+
+.packages .grid li i {
+	color: #e07e7b;
+}
+
+.packages .grid li h4 {
+	font-size: 30px;
+	margin: 25px 0;
+}
+
+@media (max-width: 800px) {
+	.packages .grid li {
+		flex-basis: 100%;
+		padding: 20px;
+	}
+}
+
+/*Testimonials Section*/
+
+.testimonials .quote {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 40px 0 25px;
+}
+
+@media (max-width: 800px) {
+	.testimonials .quote {
+		font-size: 18px;
+		margin: 15px 0;
+	}
+
+	.testimonials .author {
+		font-size: 14px;
+	}
+}
+
+/*Contact Section*/
+
+.contact form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 60%;
+}
+
+.contact form .btn {
+	padding: 18px 42px;
+}
+
+.contact form input {
+	padding: 15px;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+	flex: 1;
+}
+
+@media (max-width: 1000px) {
+	.contact form input {
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+}
+

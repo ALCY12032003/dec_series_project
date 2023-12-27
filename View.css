@@ -1,0 +1,48 @@
+.bg
+{
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://images.pexels.com/photos/296121/pexels-photo-296121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+    
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 20px;
+    font-family: Candara;
+    min-width: 00px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: 240px;
+}
+.styled-table thead tr {
+	background-color: #ce5856;
+    color: #ffffff;
+    text-align: center;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #000000;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #fa4242b7;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
